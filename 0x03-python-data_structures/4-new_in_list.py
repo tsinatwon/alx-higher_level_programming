@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 def new_in_list(my_list, index, element):
     n = len(my_list)
     list_cpy = my_list.copy()
