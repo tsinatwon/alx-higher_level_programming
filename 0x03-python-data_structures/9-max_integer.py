@@ -1,13 +1,15 @@
 #!/usr/bin/python3
+# 9-max_integer.py
 
 
 def max_integer(my_list=[]):
-    max_val = my_list[0]
+    """find largest int"""
     if len(my_list) == 0:
-        return None
-    for i in my_list:
-        if i > max_val:
-            max_val = i
-        else:
-            continue
-    return max_val
+        return (None)
+
+    lg = my_list[0]
+    for j in range(len(my_list)):
+        if my_list[j] > lg:
+            lg = my_list[j]
+
+    return (lg)
