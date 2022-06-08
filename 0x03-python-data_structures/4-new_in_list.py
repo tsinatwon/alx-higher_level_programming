@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-def new_in_list(my_list, index, element):
-    n = len(my_list)
-    list_cpy = my_list.copy()
-    if index < 0:
-        return list_cpy
-    elif index > n - 1:
-        return list_cpy
-    else:
-        list_cpy[index] = element
-        return 
+# 4-new_in_list.py
+
+
+def new_in_list(my_list, idx, element):
+    """Replace element in a cpy list at specified pos."""
+    if idx < 0 or idx > (len(my_list) - 1):
+        return (my_list)
+
+    cpy = [i for i in my_list]
+    cpy[idx] = element
+    return (cpy)
