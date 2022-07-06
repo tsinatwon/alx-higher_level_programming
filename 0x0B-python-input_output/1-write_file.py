@@ -15,4 +15,4 @@ def write_file(filename="", text=""):
         for i in range(len(text)):
             f.write(text[i])
             num_of_chars += 1
-    return 
+    return num_of_chars
