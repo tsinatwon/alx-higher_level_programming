@@ -68,9 +68,7 @@ class Rectangle:
             return ((2 * self.__width) + (2 * self.__height))
 
     def __repr__(self):
-        '''
-            returnn formal string
-        '''
-        rect = "Rectangle( " + str(self.__width) + ", " + \
-               str(self.__height) + ")"
-        return rect
+        """Return the string representation of the Rectangle."""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
